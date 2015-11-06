@@ -1,5 +1,5 @@
 {
-  "name": "ioc-autoload",
+  "name": "simple-dic",
   "version": "1.0.0",
   "description": "Dependency injection container with autoload resolver",
   "main": "lib/dic.js",
