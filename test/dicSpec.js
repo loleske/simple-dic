@@ -3,6 +3,7 @@
 
   var chai = require('chai');
   var expect = chai.expect;
+  var assert = chai.assert;
 
   var DIC = require('../lib/dic.js');
   var App;
@@ -25,6 +26,31 @@
     beforeEach(function () {
       App = new DIC();
     });
+
+    it("should have $registry property", function () {
+      expect(App.registry).to.be.a("Array");
+    });
+
+    it("should have $instances property", function () {
+      expect(App.instances).to.be.a("Array");
+    });
+
+    it("should have $factories property", function () {
+      expect(App.factories).to.be.a("Array");
+    });
+
+    it("should have #set function", function () {
+      expect(App.set).to.be.a("function");
+    });
+
+    it("should have #setFactory function", function () {
+      expect(App.setFactory).to.be.a("function");
+    });
+
+    it("should have #get function", function () {
+      expect(App.get).to.be.a("function");
+    });
+
 
     describe("#set", function () {
       it("should set resolver in registry", function () {
@@ -68,7 +94,7 @@
         expect(App.get("test3").test).to.not.equal(App.get("test3").test);
       });
 
-      
+
     });
 
   });
