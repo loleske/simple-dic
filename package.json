@@ -1,0 +1,15 @@
+{
+  "name": "ioc-autoload",
+  "version": "1.0.0",
+  "description": "Dependency injection container with autoload resolver",
+  "main": "lib/dic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas MELESI <t.melesi@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "sinon": "^1.17.2"
+  }
+}
